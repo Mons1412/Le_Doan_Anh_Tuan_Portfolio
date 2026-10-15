@@ -140,3 +140,52 @@ main{max-width:1170px;margin:auto;padding:0 clamp(60px,8.3vw,115px)}.section{scr
     overflow-wrap: break-word;
 }
 
+
+/* PORTFOLIO PROJECT UPDATE: real screenshot + two inspiration cards */
+/* Present the full, tall application screenshot without cropping out UI panels. */
+.artwork-xray {
+    isolation: isolate;
+    background: #112240;
+}
+.artwork-xray::before {
+    content: "";
+    position: absolute;
+    inset: -16px;
+    background: url("assets/lung-xray-project.png") center / cover no-repeat;
+    filter: blur(14px);
+    opacity: .30;
+    z-index: 0;
+    pointer-events: none;
+}
+.artwork-xray::after {
+    background: transparent;
+    z-index: 1;
+    pointer-events: none;
+}
+.artwork-xray img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+    filter: drop-shadow(0 8px 12px rgba(0,0,0,.38));
+}
+.project-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.card-github-link {
+    color: var(--slate-light);
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-github-link:hover, .card-github-link:focus-visible {
+    color: var(--mint);
+}
+.card-github-link .icon { width: 20px; height: 20px; }
+@media (max-width: 620px) {
+    .project-cards { grid-template-columns: 1fr; }
+}
