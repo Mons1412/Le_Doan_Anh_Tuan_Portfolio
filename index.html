@@ -14,8 +14,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project-tech.css">
+  <link rel="stylesheet" href="gaa-experience.css">
   <script src="config.js" defer></script>
   <script src="script.js" defer></script>
+  <script src="project-tech.js" defer></script>
+  <link rel="stylesheet" href="projects-more.css">
+  <link rel="stylesheet" href="independent-love.css">
 </head>
 <body>
   <a href="#main" class="skip-link" data-en="Skip to content" data-vi="Đi đến nội dung">Skip to content</a>
@@ -41,7 +46,7 @@
         <a class="nav-link" href="#work"><span>03.</span> <span data-en="Work" data-vi="Dự án">Work</span></a>
         <a class="nav-link" href="#contact"><span>04.</span> <span data-en="Contact" data-vi="Liên hệ">Contact</span></a>
         <button class="lang-switch" id="language-toggle" type="button" aria-label="Switch to Vietnamese"><span class="lang-active">EN</span><span class="lang-divider">/</span><span class="lang-inactive">VI</span></button>
-        <a class="outline-button nav-resume" id="resume-link-desktop" href="resume/Le_Doan_Anh_Tuan_Resume_EN.pdf" download><svg class="icon"><use href="#i-download"/></svg><span data-en="Résumé" data-vi="Hồ sơ PDF">Résumé</span></a>
+        <a class="outline-button nav-resume" id="resume-link-desktop" href="resume/Le_Doan_Anh_Tuan_Resume_EN.pdf" download><svg class="icon"><use href="#i-download"/></svg><span data-en="My CV" data-vi="Hồ sơ PDF">My CV</span></a>
       </nav>
       <button class="mobile-toggle" id="mobile-toggle" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
     </div>
@@ -54,7 +59,7 @@
     <a href="#work"><span>03.</span><strong data-en="Work" data-vi="Dự án">Work</strong></a>
     <a href="#contact"><span>04.</span><strong data-en="Contact" data-vi="Liên hệ">Contact</strong></a>
     <button class="mobile-language" id="mobile-language" type="button">EN <span>⇄</span> VI</button>
-    <a class="outline-button mobile-resume" id="resume-link-mobile" href="resume/Le_Doan_Anh_Tuan_Resume_EN.pdf" download data-en="Download résumé" data-vi="Tải hồ sơ PDF">Download résumé</a>
+    <a class="outline-button mobile-resume" id="resume-link-mobile" href="resume/Le_Doan_Anh_Tuan_Resume_EN.pdf" download data-en="Download my CV" data-vi="Tải hồ sơ PDF">Download my CV</a>
   </nav>
 
   <aside class="social-rail" aria-label="Social accounts">
@@ -71,7 +76,7 @@
       <p class="eyebrow" data-en="Hi, my name is" data-vi="Xin chào, tôi là">Hi, my name is</p>
       <h1><span data-en="Le Doan Anh Tuan" data-vi="Lê Đoàn Anh Tuấn">Le Doan Anh Tuan</span><span class="period">.</span></h1>
       <h2 data-en="I turn ideas into working software." data-vi="Tôi biến ý tưởng thành phần mềm thực tế.">I turn ideas into working software.</h2>
-      <p class="hero-summary" data-en="I'm a software engineering student who enjoys building practical systems — from AI-powered medical imaging tools to GPU computing experiments. I care about the details, the performance, and the people using what I build." data-vi="Tôi là sinh viên Kỹ thuật phần mềm, yêu thích xây dựng những hệ thống có giá trị thực tiễn — từ ứng dụng AI hỗ trợ phân tích ảnh X-quang đến các thử nghiệm tính toán GPU. Tôi quan tâm đến trải nghiệm, hiệu năng và giá trị sử dụng.">I'm a software engineering student who enjoys building practical systems — from AI-powered medical imaging tools to GPU computing experiments. I care about the details, the performance, and the people using what I build.</p>
+      <p class="hero-summary" data-en="I'm a software engineering student who enjoys building practical AI applications and exploring how software works under the hood — from medical imaging systems and local LLMs to C++, Linux, and GPU computing. I care about building software that is reliable, efficient, and genuinely useful to the people who use it." data-vi="Tôi là sinh viên Kỹ thuật phần mềm, yêu thích xây dựng những hệ thống có giá trị thực tiễn — từ ứng dụng AI hỗ trợ phân tích ảnh X-quang đến các thử nghiệm tính toán GPU. Tôi quan tâm đến trải nghiệm, hiệu năng và giá trị sử dụng.">I'm a software engineering student who enjoys building practical AI applications and exploring how software works under the hood — from medical imaging systems and local LLMs to C++, Linux, and GPU computing. I care about building software that is reliable, efficient, and genuinely useful to the people who use it.</p>
       <div class="hero-actions"><a class="outline-button hero-primary" href="#work"><span data-en="Explore my work" data-vi="Khám phá dự án">Explore my work</span><svg class="icon"><use href="#i-arrow"/></svg></a><a class="text-cta" href="#about"><span data-en="A little about me" data-vi="Tìm hiểu về tôi">A little about me</span><span aria-hidden="true">↘</span></a></div>
       <div class="hero-bottom"><span class="hero-scroll"><span class="scroll-line"></span><span data-en="SCROLL TO EXPLORE" data-vi="CUỘN ĐỂ KHÁM PHÁ">SCROLL TO EXPLORE</span></span><span class="hero-status"><span class="status-dot"></span><span data-en="OPEN TO OPPORTUNITIES" data-vi="SẴN SÀNG ĐÓN NHẬN CƠ HỘI">OPEN TO OPPORTUNITIES</span></span></div>
       <span class="hero-orbit" aria-hidden="true">&lt; / &gt;</span>
@@ -81,8 +86,8 @@
       <h2 class="section-title" id="about-heading"><span>01.</span><span data-en="About Me" data-vi="Giới thiệu">About Me</span></h2>
       <div class="about-grid">
         <div class="about-copy">
-          <p data-en="Hello! I'm Tuan, a final-year Software Engineering student at Nguyen Tat Thanh University in Ho Chi Minh City. I love the process of taking a difficult problem, understanding it deeply, and turning it into something useful." data-vi="Xin chào! Tôi là Tuấn, sinh viên năm cuối ngành Kỹ thuật phần mềm tại Đại học Nguyễn Tất Thành, TP. Hồ Chí Minh. Tôi yêu thích việc tìm hiểu cặn kẽ một vấn đề khó và biến nó thành một sản phẩm hữu ích.">Hello! I'm Tuan, a final-year Software Engineering student at Nguyen Tat Thanh University in Ho Chi Minh City. I love the process of taking a difficult problem, understanding it deeply, and turning it into something useful.</p>
-          <p data-en="My work spans AI applications, backend development, and small products for everyday use. Lately, I've been digging into C++, parallel computing, and CUDA as I work toward a stronger foundation in systems and GPU software." data-vi="Tôi tập trung vào ứng dụng AI, phát triển backend và những sản phẩm nhỏ phục vụ nhu cầu hằng ngày. Gần đây, tôi đang đào sâu vào C++, tính toán song song và CUDA để xây dựng nền tảng vững chắc về hệ thống và phần mềm GPU.">My work spans AI applications, backend development, and small products for everyday use. Lately, I've been digging into C++, parallel computing, and CUDA as I work toward a stronger foundation in systems and GPU software.</p>
+          <p data-en="Hello! I'm Tuan, a final-year Software Engineering student at Nguyen Tat Thanh University in Ho Chi Minh City. I enjoy breaking down complex problems, learning how systems work, and building practical solutions." data-vi="Xin chào! Tôi là Tuấn, sinh viên năm cuối ngành Kỹ thuật phần mềm tại Đại học Nguyễn Tất Thành, TP. Hồ Chí Minh. Tôi yêu thích việc tìm hiểu cặn kẽ một vấn đề khó và biến nó thành một sản phẩm hữu ích.">Hello! I'm Tuan, a final-year Software Engineering student at Nguyen Tat Thanh University in Ho Chi Minh City. I enjoy breaking down complex problems, learning how systems work, and building practical solutions.</p>
+          <p data-en="I've worked on chest X-ray classification, backend APIs, and a vocabulary-learning app. These projects have taught me to think beyond individual features and consider how models, data, and interfaces work together. I'm also studying C++, Linux, parallel computing, and CUDA as I explore systems and GPU software." data-vi="Tôi tập trung vào ứng dụng AI, phát triển backend và những sản phẩm nhỏ phục vụ nhu cầu hằng ngày. Gần đây, tôi đang đào sâu vào C++, tính toán song song và CUDA để xây dựng nền tảng vững chắc về hệ thống và phần mềm GPU.">I've worked on chest X-ray classification, backend APIs, and a vocabulary-learning app. These projects have taught me to think beyond individual features and consider how models, data, and interfaces work together. I'm also studying C++, Linux, parallel computing, and CUDA as I explore systems and GPU software.</p>
           <p data-en="Here are some technologies I'm working with:" data-vi="Một số công nghệ tôi đang sử dụng và học tập:">Here are some technologies I'm working with:</p>
           <ul class="skills-list"><li>Python &amp; FastAPI</li><li>C / C++</li><li>TensorFlow &amp; Keras</li><li>Docker &amp; Linux</li><li>JavaScript &amp; Web</li><li>CUDA <span class="muted-small" data-en="(learning)" data-vi="(đang học)">(learning)</span></li></ul>
         </div>
@@ -92,64 +97,357 @@
 
     <section class="content-section section experience-section" id="experience" aria-labelledby="experience-heading">
       <h2 class="section-title" id="experience-heading"><span>02.</span><span data-en="Where I've Worked" data-vi="Kinh nghiệm làm việc">Where I've Worked</span></h2>
-      <div class="experience-layout"><div class="experience-tabs" role="tablist" aria-label="Experience history"><button id="tab-0" class="experience-tab" role="tab" aria-selected="true" aria-controls="panel-0" tabindex="0" data-tab="0">GAA</button><button id="tab-1" class="experience-tab" role="tab" aria-selected="false" aria-controls="panel-1" tabindex="-1" data-tab="1" data-en="Independent" data-vi="Dự án cá nhân">Independent</button></div><div class="experience-panels"><div class="experience-panel" id="panel-0" role="tabpanel" aria-labelledby="tab-0">
-  <h3>
-    <span data-en="Global American Academy" data-vi="Global American Academy">Global American Academy</span>
-    <a class="accent" href="https://gaaeducation.vn/" target="_blank" rel="noopener noreferrer" aria-label="Global American Academy official website">↗</a>
-  </h3>
-  <p class="job-period"
-     data-en="25 Dec 2025 – 15 Aug 2026 · Approximately 8 months"
-     data-vi="25/12/2025 – 15/08/2026 · Khoảng 8 tháng">25 Dec 2025 – 15 Aug 2026 · Approximately 8 months</p>
-  <ul class="job-points">
-    <li data-en="Intern — 25 Dec 2025 to 25 Mar 2026."
-        data-vi="Thực tập sinh — 25/12/2025 đến 25/03/2026.">Intern — 25 Dec 2025 to 25 Mar 2026.</li>
-    <li data-en="Marketing Department — 26 Mar 2026 to 15 May 2026."
-        data-vi="Phòng Marketing — 26/03/2026 đến 15/05/2026.">Marketing Department — 26 Mar 2026 to 15 May 2026.</li>
-    <li data-en="Admin Department — 16 May 2026 to 15 Aug 2026."
-        data-vi="Phòng Admin — 16/05/2026 đến 15/08/2026.">Admin Department — 16 May 2026 to 15 Aug 2026.</li>
-  </ul>
+      <div class="experience-layout"><div class="experience-tabs" role="tablist" aria-label="Experience history"><button id="tab-0" class="experience-tab" role="tab" aria-selected="true" aria-controls="panel-0" tabindex="0" data-tab="0">GAA</button><button id="tab-1" class="experience-tab" role="tab" aria-selected="false" aria-controls="panel-1" tabindex="-1" data-tab="1" data-en="Independent" data-vi="Dự án cá nhân">Independent</button></div><div class="experience-panels"><div class="experience-panel" id="panel-0" role="tabpanel" aria-labelledby="tab-0" data-portfolio-gaa="v1">
+  <div class="gaa-heading">
+    <h3><span data-en="Global American Academy" data-vi="Global American Academy">Global American Academy</span>
+      <a class="accent" href="https://gaaeducation.vn/" target="_blank" rel="noopener noreferrer" aria-label="Global American Academy website">↗</a></h3>
+    <p class="job-period" data-en="25 Dec 2025 – 15 Aug 2026 · Operations, Marketing &amp; Administration" data-vi="25/12/2025 – 15/08/2026 · Vận hành, Marketing và Hành chính">25 Dec 2025 – 15 Aug 2026 · Operations, Marketing &amp; Administration</p>
+  </div>
+  <div class="gaa-content">
+    <h4 class="gaa-subheading" data-en="Professional Experience" data-vi="Kinh nghiệm làm việc">Professional Experience</h4>
+    <p class="gaa-intro" data-en="Select a role to see the responsibilities and work I handled." data-vi="Chọn từng vị trí để xem công việc và trách nhiệm cụ thể.">Select a role to see the responsibilities and work I handled.</p>
+    <div class="gaa-roles">
+      <details class="gaa-role" open>
+        <summary class="gaa-role-summary">
+          <span class="gaa-role-name"><span data-en="Intern · Cross-Department Operations" data-vi="Thực tập sinh · Hỗ trợ liên phòng ban">Intern · Cross-Department Operations</span></span>
+          <span class="gaa-role-period"><span data-en="25 Dec 2025 – 25 Mar 2026" data-vi="25/12/2025 – 25/03/2026">25 Dec 2025 – 25 Mar 2026</span></span>
+        </summary>
+        <ul class="job-points gaa-role-points">
+          <li data-en="Learned GAA’s internal policies, workplace standards, and operating procedures." data-vi="Tìm hiểu nội quy, quy định và quy trình làm việc tại GAA.">Learned GAA’s internal policies, workplace standards, and operating procedures.</li>
+          <li data-en="Gained exposure to the workflows of five departments: Administration, Marketing, Academic Affairs, Accounting, and Sales." data-vi="Tìm hiểu quy trình của năm phòng ban: Hành chính, Marketing, Học vụ, Kế toán và Kinh doanh.">Gained exposure to the workflows of five departments: Administration, Marketing, Academic Affairs, Accounting, and Sales.</li>
+          <li data-en="Communicated with business partners to discuss affiliate marketing plans." data-vi="Trao đổi trực tiếp với đối tác để thảo luận kế hoạch tiếp thị liên kết.">Communicated with business partners to discuss affiliate marketing plans.</li>
+          <li data-en="Compiled and maintained customer and prospect lists." data-vi="Lập và cập nhật danh sách khách hàng, khách hàng tiềm năng.">Compiled and maintained customer and prospect lists.</li>
+          <li data-en="Practiced customer outreach and company introductions at trade exhibitions such as SECC and TBECC." data-vi="Thực hành tìm kiếm khách hàng và giới thiệu công ty tại các hội chợ như SECC, TBECC.">Practiced customer outreach and company introductions at trade exhibitions such as SECC and TBECC.</li>
+          <li data-en="Supported professional customer reception and greetings." data-vi="Hỗ trợ công việc chào hỏi, đón tiếp khách hàng.">Supported professional customer reception and greetings.</li>
+          <li data-en="Recorded meeting minutes and summarized key discussion points." data-vi="Ghi biên bản và tổng hợp nội dung chính của các buổi họp.">Recorded meeting minutes and summarized key discussion points.</li>
+        </ul>
+      </details>
+      <details class="gaa-role">
+        <summary class="gaa-role-summary">
+          <span class="gaa-role-name"><span data-en="Marketing Department" data-vi="Phòng Marketing">Marketing Department</span></span>
+          <span class="gaa-role-period"><span data-en="26 Mar 2026 – 1 Jun 2026" data-vi="26/03/2026 – 01/06/2026">26 Mar 2026 – 1 Jun 2026</span></span>
+        </summary>
+        <ul class="job-points gaa-role-points">
+          <li data-en="Planned and created content for social media channels." data-vi="Lên ý tưởng và sản xuất nội dung cho các kênh mạng xã hội.">Planned and created content for social media channels.</li>
+          <li data-en="Supported event photography and video production." data-vi="Hỗ trợ chụp ảnh và quay video tại các sự kiện.">Supported event photography and video production.</li>
+          <li data-en="Designed marketing materials, including posters and banners." data-vi="Thiết kế ấn phẩm truyền thông như poster và banner.">Designed marketing materials, including posters and banners.</li>
+          <li data-en="Produced AI-generated promotional videos for products." data-vi="Sản xuất video quảng bá sản phẩm bằng công cụ AI.">Produced AI-generated promotional videos for products.</li>
+          <li data-en="Prepared daily content for events and activities involving GAA." data-vi="Lên kế hoạch và viết nội dung cho các sự kiện, hoạt động hằng ngày của GAA.">Prepared daily content for events and activities involving GAA.</li>
+          <li data-en="Planned weekly content and wrote posts for GAA’s Facebook pages and website." data-vi="Lập kế hoạch nội dung hằng tuần và viết bài cho các fanpage, website của GAA.">Planned weekly content and wrote posts for GAA’s Facebook pages and website.</li>
+          <li data-en="Prepared livestream scripts and occasionally assisted live sessions." data-vi="Viết kịch bản livestream và thỉnh thoảng hỗ trợ các buổi phát trực tiếp.">Prepared livestream scripts and occasionally assisted live sessions.</li>
+          <li data-en="Trained Marketing interns on team workflows and KPIs." data-vi="Hướng dẫn thực tập sinh Marketing về quy trình làm việc và KPI.">Trained Marketing interns on team workflows and KPIs.</li>
+        </ul>
+      </details>
+      <details class="gaa-role">
+        <summary class="gaa-role-summary">
+          <span class="gaa-role-name"><span data-en="Administrative Department" data-vi="Phòng Hành chính">Administrative Department</span></span>
+          <span class="gaa-role-period"><span data-en="2 Jun 2026 – 15 Aug 2026" data-vi="02/06/2026 – 15/08/2026">2 Jun 2026 – 15 Aug 2026</span></span>
+        </summary>
+        <ul class="job-points gaa-role-points">
+          <li data-en="Conducted company asset inventories and updated asset records." data-vi="Kiểm kê và cập nhật thông tin tài sản của công ty.">Conducted company asset inventories and updated asset records.</li>
+          <li data-en="Planned and prepared equipment and materials for classes, meetings, and company events." data-vi="Lên kế hoạch và chuẩn bị công cụ, thiết bị cho các buổi dạy, buổi họp và sự kiện.">Planned and prepared equipment and materials for classes, meetings, and company events.</li>
+          <li data-en="Recorded employee meal and refreshment expenses." data-vi="Thống kê chi phí ăn uống của nhân viên.">Recorded employee meal and refreshment expenses.</li>
+          <li data-en="Tracked expenses related to company meetings." data-vi="Theo dõi và thống kê chi phí cho các buổi họp.">Tracked expenses related to company meetings.</li>
+          <li data-en="Organized and maintained office documents and administrative records." data-vi="Quản lý giấy tờ và hồ sơ hành chính của văn phòng.">Organized and maintained office documents and administrative records.</li>
+          <li data-en="Coordinated office cleanliness and routine upkeep." data-vi="Theo dõi và phối hợp việc vệ sinh, duy trì văn phòng.">Coordinated office cleanliness and routine upkeep.</li>
+          <li data-en="Guided interns through administrative workflows." data-vi="Hướng dẫn thực tập sinh về quy trình làm việc hành chính.">Guided interns through administrative workflows.</li>
+          <li data-en="Handed over responsibilities and documentation before leaving the role." data-vi="Bàn giao công việc và tài liệu liên quan trước khi nghỉ việc.">Handed over responsibilities and documentation before leaving the role.</li>
+        </ul>
+      </details>
+    </div>
+    <h4 class="gaa-subheading gaa-subheading-projects" data-en="Projects &amp; Collaborations" data-vi="Dự án và hợp tác">Projects &amp; Collaborations</h4>
+    <p class="gaa-intro" data-en="Selected initiatives I supported through company operations, communications, and partner collaboration." data-vi="Một số hoạt động tôi tham gia hỗ trợ qua công việc vận hành, truyền thông và phối hợp đối tác.">Selected initiatives I supported through company operations, communications, and partner collaboration.</p>
+    <div class="gaa-project-list">
+      <article class="gaa-project">
+        <span class="gaa-project-index" aria-hidden="true">01</span>
+        <div class="gaa-project-body">
+          <h5 data-en="GAA English Education Programs" data-vi="Các chương trình tiếng Anh của GAA">GAA English Education Programs</h5>
+          <p class="gaa-project-period" data-en="From 25 Dec 2025" data-vi="Từ 25/12/2025">From 25 Dec 2025</p>
+          <p class="gaa-project-desc" data-en="Supported work involving five GAA education programs:" data-vi="Tham gia công việc liên quan đến năm chương trình đào tạo tiếng Anh của GAA:">Supported work involving five GAA education programs:</p>
+          <div class="gaa-project-links">
+            <a class="gaa-project-link" href="https://www.facebook.com/gaabusiness.edu" target="_blank" rel="noopener noreferrer"><span data-en="Amazon English" data-vi="Tiếng Anh Amazon">Amazon English</span> <span aria-hidden="true">↗</span></a>
+            <a class="gaa-project-link" href="https://www.facebook.com/GAABilingualTalentCoach/" target="_blank" rel="noopener noreferrer"><span data-en="Bilingual Preschool English" data-vi="Tiếng Anh mầm non song ngữ">Bilingual Preschool English</span> <span aria-hidden="true">↗</span></a>
+            <a class="gaa-project-link" href="https://www.facebook.com/gaaglobalpathway" target="_blank" rel="noopener noreferrer"><span data-en="Study Abroad Preparation" data-vi="Tiếng Anh dự bị du học">Study Abroad Preparation</span> <span aria-hidden="true">↗</span></a>
+            <a class="gaa-project-link" href="https://www.facebook.com/gaaenglish.edu/" target="_blank" rel="noopener noreferrer"><span data-en="Cambridge English" data-vi="Tiếng Anh Cambridge">Cambridge English</span> <span aria-hidden="true">↗</span></a>
+            <a class="gaa-project-link" href="https://www.facebook.com/gaaskills.edu" target="_blank" rel="noopener noreferrer"><span data-en="SAT Preparation" data-vi="Tiếng Anh SAT">SAT Preparation</span> <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="gaa-project">
+        <span class="gaa-project-index" aria-hidden="true">02</span>
+        <div class="gaa-project-body">
+          <h5 data-en="Affiliate Marketing — Emy Fashion" data-vi="Tiếp thị liên kết — Emy Fashion">Affiliate Marketing — Emy Fashion</h5>
+          <p class="gaa-project-period" data-en="From 10 Jan 2026" data-vi="Từ 10/01/2026">From 10 Jan 2026</p>
+          <p class="gaa-project-desc" data-en="Participated in an affiliate marketing partnership and supported communication and promotional planning." data-vi="Tham gia hợp tác tiếp thị liên kết, hỗ trợ trao đổi với đối tác và lập kế hoạch quảng bá.">Participated in an affiliate marketing partnership and supported communication and promotional planning.</p>
+          <div class="gaa-project-links">
+            <a class="gaa-project-link" href="https://www.facebook.com/emifashion2026" target="_blank" rel="noopener noreferrer"><span data-en="Emy Fashion" data-vi="Emy Fashion">Emy Fashion</span> <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="gaa-project">
+        <span class="gaa-project-index" aria-hidden="true">03</span>
+        <div class="gaa-project-body">
+          <h5 data-en="100 Years of Vietnamese Painting &amp; Lacquer Art Heritage" data-vi="100 năm di sản hội họa và sơn mài Việt Nam">100 Years of Vietnamese Painting &amp; Lacquer Art Heritage</h5>
+          <p class="gaa-project-period" data-en="From Mar 2026" data-vi="Từ tháng 03/2026">From Mar 2026</p>
+          <p class="gaa-project-desc" data-en="Supported an English-language heritage initiative in collaboration with Toluck and partners associated with the Vietnam Records Institute, including coordination related to its website." data-vi="Hỗ trợ sáng kiến tiếng Anh về di sản hội họa và sơn mài, phối hợp với Toluck và các đối tác liên quan đến Viện Kỷ lục Việt Nam, bao gồm công việc phối hợp liên quan đến website.">Supported an English-language heritage initiative in collaboration with Toluck and partners associated with the Vietnam Records Institute, including coordination related to its website.</p>
+          <div class="gaa-project-links">
+            <a class="gaa-project-link" href="https://toluck.com.vn" target="_blank" rel="noopener noreferrer"><span data-en="Toluck" data-vi="Toluck">Toluck</span> <span aria-hidden="true">↗</span></a>
+            <a class="gaa-project-link" href="https://tramnamdisanhoihoavasonmaivietnam.com/top-8-dia-chi-cung-cap-san-pham-son-mai-chat-luong-viet-nam-hanh-trinh-100-nam-ky-nguyen-hoi-hoa-son-mai-viet-nam/" target="_blank" rel="noopener noreferrer"><span data-en="Heritage website" data-vi="Website di sản">Heritage website</span> <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="gaa-project">
+        <span class="gaa-project-index" aria-hidden="true">04</span>
+        <div class="gaa-project-body">
+          <h5 data-en="100-Year Journey: Vietnamese Lacquer Painting Heritage (1930–2030)" data-vi="Hành trình 100 năm: Di sản sơn mài hội họa Việt Nam (1930–2030)">100-Year Journey: Vietnamese Lacquer Painting Heritage (1930–2030)</h5>
+          <p class="gaa-project-period" data-en="From Mar 2026" data-vi="Từ tháng 03/2026">From Mar 2026</p>
+          <p class="gaa-project-desc" data-en="Supported a related heritage initiative with another partner, including coordination around the project website." data-vi="Tham gia phối hợp với một đối tác khác trong sáng kiến về di sản sơn mài, gồm công việc liên quan đến website dự án.">Supported a related heritage initiative with another partner, including coordination around the project website.</p>
+          <div class="gaa-project-links">
+            <a class="gaa-project-link" href="https://21gallery.here.asia" target="_blank" rel="noopener noreferrer"><span data-en="Project website" data-vi="Website dự án">Project website</span> <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="gaa-project">
+        <span class="gaa-project-index" aria-hidden="true">05</span>
+        <div class="gaa-project-body">
+          <h5 data-en="Nông Thị 2.0 — Partner Collaboration" data-vi="Nông Thị 2.0 — Hợp tác đối tác">Nông Thị 2.0 — Partner Collaboration</h5>
+          <p class="gaa-project-period" data-en="From Mar 2026" data-vi="Từ tháng 03/2026">From Mar 2026</p>
+          <p class="gaa-project-desc" data-en="Supported partner collaboration on Nông Thị 2.0, an initiative started by Nguyễn Văn Cường, founder of An Nông Group." data-vi="Tham gia phối hợp cùng các đối tác trong dự án Nông Thị 2.0, do ThS. Nguyễn Văn Cường, người sáng lập An Nông Group, khởi xướng.">Supported partner collaboration on Nông Thị 2.0, an initiative started by Nguyễn Văn Cường, founder of An Nông Group.</p>
+          <div class="gaa-project-links">
+            <a class="gaa-project-link" href="https://www.facebook.com/profile.php?id=61576477449987" target="_blank" rel="noopener noreferrer"><span data-en="Nông Thị 2.0" data-vi="Nông Thị 2.0">Nông Thị 2.0</span> <span aria-hidden="true">↗</span></a>
+            <a class="gaa-project-link" href="https://annonggroup.com.vn" target="_blank" rel="noopener noreferrer"><span data-en="An Nông Group" data-vi="An Nông Group">An Nông Group</span> <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
 </div>
-<div class="experience-panel" id="panel-1" role="tabpanel" aria-labelledby="tab-1" hidden><h3><span data-en="Software Projects" data-vi="Phát triển phần mềm cá nhân">Software Projects</span> <span class="accent" data-en="@ Independent" data-vi="@ Cá nhân">@ Independent</span></h3><p class="job-period" data-en="2026 — Present · Self-directed, not employment" data-vi="2026 — Hiện tại · Dự án tự học, không phải công việc tại công ty">2026 — Present · Self-directed, not employment</p><ul class="job-points"><li data-en="Built an AI-assisted chest X-ray analysis prototype with a REST API and packaging workflows." data-vi="Xây dựng nguyên mẫu phân tích X-quang phổi hỗ trợ AI cùng REST API và quy trình đóng gói.">Built an AI-assisted chest X-ray analysis prototype with a REST API and packaging workflows.</li><li data-en="Established a CPU matrix multiplication baseline before exploring CUDA kernels." data-vi="Xây dựng phép nhân ma trận CPU làm mốc đánh giá trước khi nghiên cứu CUDA kernel.">Established a CPU matrix multiplication baseline before exploring CUDA kernels.</li><li data-en="Prototyped a vocabulary-learning web app and Android APK packaging." data-vi="Thử nghiệm ứng dụng học từ vựng web và quy trình đóng gói APK Android.">Prototyped a vocabulary-learning web app and Android APK packaging.</li></ul></div></div></div>
+<div class="experience-panel independent-love" id="panel-1" role="tabpanel" aria-labelledby="tab-1" hidden data-independent-love="v1">
+  <p class="independent-love-message" data-en="A little love for everything!" data-vi="T&#236;nh y&#234;u cho m&#7885;i th&#7913;">A little love for everything!</p>
+</div></div></div>
     </section>
 
-    <section class="content-section section work-section" id="work" aria-labelledby="work-heading">
-      <h2 class="section-title" id="work-heading"><span>03.</span><span data-en="Some Things I've Built" data-vi="Những dự án tiêu biểu">Some Things I've Built</span></h2>
+        <!-- Projects overview: three primary projects and technology-specific explanations -->
+    <section class="content-section section work-section" id="work" aria-labelledby="work-heading" data-portfolio-projects="v1">
+      <h2 class="section-title" id="work-heading"><span>03.</span><span data-en="Some Things I&#x27;ve Built" data-vi="Những dự án tiêu biểu">Some Things I&#x27;ve Built</span></h2>
       <div class="featured-list">
-        <article class="featured-project"><a class="project-artwork artwork-xray" href="https://github.com/Mons1412/Development-of-an-AI-Based-Lung-Disease-Detection-System-Using-Chest-X-Ray-Images_v.2.0.git" target="_blank" rel="noopener noreferrer" aria-label="Open Lung X-ray AI analysis history and patient profile screenshot GitHub repository"><img src="assets/lung-xray-project.png" alt="Lung X-ray AI analysis history and patient profile screenshot" loading="lazy"></a><div class="project-info"><p class="overline" data-en="Featured Project / AI &amp; Backend" data-vi="Dự án tiêu biểu / AI &amp; Backend">Featured Project / AI &amp; Backend</p><h3>Lung X-ray AI</h3><div class="project-description"><p data-en="A chest X-ray analysis system exploring AI-assisted classification of normal, pneumonia, and tuberculosis images. Built with an inference API, analysis history, and portable deployment in mind. Model v1.1 reached 89.62% test accuracy on its curated test set; v2 is in development." data-vi="Hệ thống phân tích ảnh X-quang phổi bằng AI, phân loại ảnh bình thường, viêm phổi và lao phổi. Có API dự đoán, lưu lịch sử phân tích và hướng đến triển khai linh hoạt. Model v1.1 đạt 89,62% accuracy trên tập kiểm thử đã chuẩn bị; phiên bản v2 đang phát triển.">A chest X-ray analysis system exploring AI-assisted classification of normal, pneumonia, and tuberculosis images. Built with an inference API, analysis history, and portable deployment in mind. Model v1.1 reached 89.62% test accuracy on its curated test set; v2 is in development.</p></div><ul class="tech-list"><li>Python</li><li>TensorFlow</li><li>FastAPI</li><li>SQLite</li><li>Docker</li></ul><div class="project-bottom"><span class="project-stage"><span class="stage-dot"></span><span data-en="v2 in development" data-vi="Đang phát triển v2">v2 in development</span></span><a class="project-note" href="https://github.com/Mons1412/Development-of-an-AI-Based-Lung-Disease-Detection-System-Using-Chest-X-Ray-Images_v.2.0.git" target="_blank" rel="noopener noreferrer" aria-label="View Lung X-ray AI on GitHub" title="Open GitHub repository"><svg class="icon"><use href="#i-github"/></svg></a></div></div></article>
-        <article class="featured-project reversed"><a class="project-artwork artwork-cuda" href="https://github.com/Mons1412/cuda-matrix-multiplication-optimizer" target="_blank" rel="noopener noreferrer" aria-label="Open CUDA Matrix Multiplication Optimizer GitHub repository"><img src="assets/cuda-preview.svg" alt="CUDA Matrix Multiplication Optimizer" loading="lazy"></a><div class="project-info"><p class="overline" data-en="Featured Project / Systems &amp; GPU" data-vi="Dự án tiêu biểu / Hệ thống &amp; GPU">Featured Project / Systems &amp; GPU</p><h3>CUDA Matrix Multiplication Optimizer</h3><div class="project-description"><p data-en="A learning-driven optimization project: establish a correct CPU baseline, then build and compare naïve CUDA, shared-memory, and tiled kernels. The CPU implementation is validated; GPU kernels and benchmarks are planned, not yet complete." data-vi="Dự án nghiên cứu tối ưu nhân ma trận: xây dựng mốc CPU chính xác, sau đó phát triển và so sánh CUDA cơ bản, shared memory và tiled kernels. Phần CPU đã được kiểm tra; các kernel GPU và benchmark còn đang trong kế hoạch.">A learning-driven optimization project: establish a correct CPU baseline, then build and compare naïve CUDA, shared-memory, and tiled kernels. The CPU implementation is validated; GPU kernels and benchmarks are planned, not yet complete.</p></div><ul class="tech-list"><li>C++</li><li>CUDA (learning)</li><li>Linux</li><li>Benchmarking</li></ul><div class="project-bottom"><span class="project-stage"><span class="stage-dot"></span><span data-en="CPU baseline complete" data-vi="Đã hoàn thành phần CPU">CPU baseline complete</span></span><a class="project-note" href="https://github.com/Mons1412/cuda-matrix-multiplication-optimizer" target="_blank" rel="noopener noreferrer" aria-label="View CUDA Matrix Multiplication Optimizer on GitHub" title="Open GitHub repository"><svg class="icon"><use href="#i-github"/></svg></a></div></div></article>
+      <article class="featured-project project-detail-card" data-project="lung">
+        <a class="project-artwork artwork-lung" href="https://github.com/Mons1412/Development-of-an-AI-Based-Lung-Disease-Detection-System-Using-Chest-X-Ray-Images_v.2.0" target="_blank" rel="noopener noreferrer" aria-label="View LungXrayAI 2.0 source code on GitHub"><img src="assets/lung-xray-project.png" alt="LungXrayAI application screenshot" loading="lazy"></a>
+        <div class="project-info">
+          <p class="overline" data-en="Featured Project / AI &amp; Backend" data-vi="Dự án tiêu biểu / AI &amp; Backend">Featured Project / AI &amp; Backend</p>
+          <h3>LungXrayAI 2.0</h3>
+          <div class="project-description"><p data-en="A chest X-ray analysis system that classifies images as Normal, Pneumonia, or Tuberculosis. It includes a prediction API, patient records, analysis history, and PDF reporting. The documented MobileNetV2 model achieved 89.62% test accuracy on 318 held-out images." data-vi="Hệ thống phân loại ảnh X-quang phổi thành ba nhóm: Bình thường, Viêm phổi và Lao phổi. Ứng dụng có API dự đoán, quản lý bệnh nhân, lịch sử phân tích và báo cáo PDF. Mô hình MobileNetV2 được ghi nhận đạt 89,62% accuracy trên 318 ảnh kiểm thử.">A chest X-ray analysis system that classifies images as Normal, Pneumonia, or Tuberculosis. It includes a prediction API, patient records, analysis history, and PDF reporting. The documented MobileNetV2 model achieved 89.62% test accuracy on 318 held-out images.</p></div>
+          <div class="project-tech" data-project-tech>
+            <p class="project-tech-hint" data-en="Select a technology to see what I used it for." data-vi="Chọn một công nghệ để xem tôi đã sử dụng nó như thế nào.">Select a technology to see what I used it for.</p>
+            <div class="project-tech-buttons" role="group" aria-label="Technologies used in this project">
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-lung-1">Python</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-lung-2">TensorFlow / Keras</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-lung-3">MobileNetV2</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-lung-4">FastAPI</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-lung-5">SQLAlchemy</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-lung-6">MySQL</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-lung-7">Alembic</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-lung-8">Docker</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-lung-9">ReportLab</button>
+            </div>
+            <div class="project-tech-explanation" id="tech-lung-1" role="region" hidden>
+              <strong>Python</strong>
+              <p data-en="Used as the main language for backend logic, image validation, and preparation of model inputs." data-vi="Ngôn ngữ chính cho logic backend, kiểm tra ảnh đầu vào và chuẩn bị dữ liệu cho mô hình.">Used as the main language for backend logic, image validation, and preparation of model inputs.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-lung-2" role="region" hidden>
+              <strong>TensorFlow / Keras</strong>
+              <p data-en="Loaded and executed the image-classification model and managed the inference pipeline." data-vi="Nạp và chạy mô hình phân loại ảnh, xây dựng luồng suy luận (inference).">Loaded and executed the image-classification model and managed the inference pipeline.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-lung-3" role="region" hidden>
+              <strong>MobileNetV2</strong>
+              <p data-en="Applied transfer learning for three-class classification using 224 × 224 × 3 RGB inputs normalized to [-1, 1]." data-vi="Sử dụng Transfer Learning để phân loại ba nhóm, nhận ảnh RGB 224 × 224 × 3 được chuẩn hóa về [-1, 1].">Applied transfer learning for three-class classification using 224 × 224 × 3 RGB inputs normalized to [-1, 1].</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-lung-4" role="region" hidden>
+              <strong>FastAPI</strong>
+              <p data-en="Built REST endpoints for predictions, model information, patient records, and analysis history." data-vi="Xây dựng REST API cho dự đoán, thông tin mô hình, hồ sơ bệnh nhân và lịch sử phân tích.">Built REST endpoints for predictions, model information, patient records, and analysis history.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-lung-5" role="region" hidden>
+              <strong>SQLAlchemy</strong>
+              <p data-en="Mapped database tables to Python objects and implemented persistence and queries through the ORM." data-vi="Ánh xạ bảng dữ liệu với đối tượng Python; thao tác lưu trữ và truy vấn bằng ORM.">Mapped database tables to Python objects and implemented persistence and queries through the ORM.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-lung-6" role="region" hidden>
+              <strong>MySQL</strong>
+              <p data-en="Stored application data such as patient records, user information, and prediction history." data-vi="Lưu dữ liệu ứng dụng như hồ sơ bệnh nhân, người dùng và lịch sử dự đoán.">Stored application data such as patient records, user information, and prediction history.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-lung-7" role="region" hidden>
+              <strong>Alembic</strong>
+              <p data-en="Tracked schema changes and applied database migrations as the backend evolved." data-vi="Quản lý thay đổi cấu trúc dữ liệu và thực hiện database migration khi backend được cập nhật.">Tracked schema changes and applied database migrations as the backend evolved.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-lung-8" role="region" hidden>
+              <strong>Docker</strong>
+              <p data-en="Containerized services and configured the application deployment using Docker Compose." data-vi="Đóng gói các dịch vụ và cấu hình triển khai ứng dụng bằng Docker Compose.">Containerized services and configured the application deployment using Docker Compose.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-lung-9" role="region" hidden>
+              <strong>ReportLab</strong>
+              <p data-en="Generated PDF reports containing structured information from the analysis workflow." data-vi="Tạo báo cáo PDF từ thông tin có cấu trúc của quá trình phân tích.">Generated PDF reports containing structured information from the analysis workflow.</p>
+            </div>
+          </div>
+          <div class="project-bottom">
+            <span class="project-stage"><span class="stage-dot"></span><span data-en="Application v2.0 · model v1.1.0" data-vi="Ứng dụng v2.0 · mô hình v1.1.0">Application v2.0 · model v1.1.0</span></span>
+            <a class="project-note" href="https://github.com/Mons1412/Development-of-an-AI-Based-Lung-Disease-Detection-System-Using-Chest-X-Ray-Images_v.2.0" target="_blank" rel="noopener noreferrer" aria-label="View LungXrayAI 2.0 on GitHub" title="Open GitHub repository"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="featured-project project-detail-card reversed" data-project="voca">
+        <a class="project-artwork artwork-voca" href="https://github.com/Mons1412/tu-vung" target="_blank" rel="noopener noreferrer" aria-label="View VocaMini — Tu-vung source code on GitHub"><img src="assets/vocamini-project.png" alt="Screenshot of the VocaMini English vocabulary app" loading="lazy"></a>
+        <div class="project-info">
+          <p class="overline" data-en="Featured Project / Learning App &amp; Speech" data-vi="Dự án tiêu biểu / Học từ vựng &amp; Giọng nói">Featured Project / Learning App &amp; Speech</p>
+          <h3>VocaMini — Tu-vung</h3>
+          <div class="project-description"><p data-en="An English vocabulary-learning app with dictionary lookup, pronunciation playback, personal vocabulary notebooks, and experiments in offline speech recognition. Developed for the web, with an Android debug build." data-vi="Ứng dụng học từ vựng tiếng Anh với tra từ điển, phát âm mẫu, sổ từ cá nhân và thử nghiệm nhận diện giọng nói offline. Phát triển trên web và có bản đóng gói Android debug.">An English vocabulary-learning app with dictionary lookup, pronunciation playback, personal vocabulary notebooks, and experiments in offline speech recognition. Developed for the web, with an Android debug build.</p></div>
+          <div class="project-tech" data-project-tech>
+            <p class="project-tech-hint" data-en="Select a technology to see what I used it for." data-vi="Chọn một công nghệ để xem tôi đã sử dụng nó như thế nào.">Select a technology to see what I used it for.</p>
+            <div class="project-tech-buttons" role="group" aria-label="Technologies used in this project">
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-voca-1">JavaScript</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-voca-2">Vite</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-voca-3">PWA</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-voca-4">LocalStorage</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-voca-5">Dictionary APIs</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-voca-6">Web Speech API</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-voca-7">Vosk (experiment)</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-voca-8">Capacitor</button>
+            </div>
+            <div class="project-tech-explanation" id="tech-voca-1" role="region" hidden>
+              <strong>JavaScript</strong>
+              <p data-en="Implemented vocabulary interactions, API responses, audio controls, and UI state." data-vi="Xử lý thao tác học từ vựng, kết quả API, điều khiển âm thanh và trạng thái giao diện.">Implemented vocabulary interactions, API responses, audio controls, and UI state.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-voca-2" role="region" hidden>
+              <strong>Vite</strong>
+              <p data-en="Used as the development and build tool for the web application." data-vi="Sử dụng làm công cụ phát triển và build ứng dụng web.">Used as the development and build tool for the web application.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-voca-3" role="region" hidden>
+              <strong>PWA</strong>
+              <p data-en="Used Service Worker caching so the installed web app can reuse cached assets offline." data-vi="Dùng Service Worker để cache tài nguyên, giúp ứng dụng web đã cài đặt sử dụng lại tài nguyên khi offline.">Used Service Worker caching so the installed web app can reuse cached assets offline.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-voca-4" role="region" hidden>
+              <strong>LocalStorage</strong>
+              <p data-en="Saved vocabulary notebooks and learning preferences locally in the browser." data-vi="Lưu sổ từ vựng và tùy chọn học tập trên trình duyệt.">Saved vocabulary notebooks and learning preferences locally in the browser.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-voca-5" role="region" hidden>
+              <strong>Dictionary APIs</strong>
+              <p data-en="Retrieved word meanings, phonetics, examples, and translations with client-side caching and fallback handling." data-vi="Lấy nghĩa từ, phiên âm, ví dụ và bản dịch; có cache và xử lý nguồn dự phòng.">Retrieved word meanings, phonetics, examples, and translations with client-side caching and fallback handling.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-voca-6" role="region" hidden>
+              <strong>Web Speech API</strong>
+              <p data-en="Played example pronunciation with browser text-to-speech and adjustable playback rate." data-vi="Phát giọng đọc mẫu bằng text-to-speech của trình duyệt và điều chỉnh tốc độ đọc.">Played example pronunciation with browser text-to-speech and adjustable playback rate.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-voca-7" role="region" hidden>
+              <strong>Vosk (experiment)</strong>
+              <p data-en="Prototyped offline speech recognition for pronunciation practice; this work may be on a separate feature branch." data-vi="Thử nghiệm nhận diện giọng nói offline để luyện phát âm; phần này có thể nằm ở nhánh phát triển riêng.">Prototyped offline speech recognition for pronunciation practice; this work may be on a separate feature branch.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-voca-8" role="region" hidden>
+              <strong>Capacitor</strong>
+              <p data-en="Packaged an Android debug APK from the web application for device testing." data-vi="Đóng gói APK Android bản debug từ ứng dụng web để kiểm thử trên thiết bị.">Packaged an Android debug APK from the web application for device testing.</p>
+            </div>
+          </div>
+          <div class="project-bottom">
+            <span class="project-stage"><span class="stage-dot"></span><span data-en="Web app · pronunciation experiments" data-vi="Ứng dụng web · thử nghiệm phát âm">Web app · pronunciation experiments</span></span>
+            <a class="project-note" href="https://github.com/Mons1412/tu-vung" target="_blank" rel="noopener noreferrer" aria-label="View VocaMini — Tu-vung on GitHub" title="Open GitHub repository"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="featured-project project-detail-card" data-project="portfolio">
+        <a class="project-artwork artwork-portfolio" href="https://github.com/Mons1412/Le_Doan_Anh_Tuan_Portfolio" target="_blank" rel="noopener noreferrer" aria-label="View My Portfolio source code on GitHub"><div class="project-mock project-mock-portfolio project-self-reference" aria-hidden="true">
+            <span class="mock-self-title" data-en="You're looking at it!" data-vi="Bạn đang xem nó đấy!">You're looking at it!</span>
+            <span class="mock-self-smile">=)))</span>
+          </div></a>
+        <div class="project-info">
+          <p class="overline" data-en="Featured Project / Web &amp; Frontend" data-vi="Dự án tiêu biểu / Web &amp; Frontend">Featured Project / Web &amp; Frontend</p>
+          <h3>My Portfolio</h3>
+          <div class="project-description"><p data-en="This bilingual, responsive portfolio introduces my work and experience. It uses plain HTML, CSS, and JavaScript, with language preference persistence and scroll-based interactions." data-vi="Chính Portfolio song ngữ này: giới thiệu dự án và kinh nghiệm của tôi, tương thích điện thoại và máy tính. Website dùng HTML, CSS, JavaScript thuần, có lưu ngôn ngữ và hiệu ứng cuộn trang.">This bilingual, responsive portfolio introduces my work and experience. It uses plain HTML, CSS, and JavaScript, with language preference persistence and scroll-based interactions.</p></div>
+          <div class="project-tech" data-project-tech>
+            <p class="project-tech-hint" data-en="Select a technology to see what I used it for." data-vi="Chọn một công nghệ để xem tôi đã sử dụng nó như thế nào.">Select a technology to see what I used it for.</p>
+            <div class="project-tech-buttons" role="group" aria-label="Technologies used in this project">
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-portfolio-1">HTML5</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-portfolio-2">CSS3</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-portfolio-3">JavaScript</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-portfolio-4">DOM API</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-portfolio-5">LocalStorage</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-portfolio-6">Intersection Observer</button>
+              <button type="button" class="project-tech-button" aria-expanded="false" aria-controls="tech-portfolio-7">Git &amp; GitHub</button>
+            </div>
+            <div class="project-tech-explanation" id="tech-portfolio-1" role="region" hidden>
+              <strong>HTML5</strong>
+              <p data-en="Structured semantic sections for About, Experience, Projects, and Contact." data-vi="Xây dựng cấu trúc ngữ nghĩa cho Giới thiệu, Kinh nghiệm, Dự án và Liên hệ.">Structured semantic sections for About, Experience, Projects, and Contact.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-portfolio-2" role="region" hidden>
+              <strong>CSS3</strong>
+              <p data-en="Built responsive layouts with Media Queries, accessible navigation styling, and transitions." data-vi="Tạo giao diện responsive bằng Media Queries, định dạng điều hướng và hiệu ứng chuyển động.">Built responsive layouts with Media Queries, accessible navigation styling, and transitions.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-portfolio-3" role="region" hidden>
+              <strong>JavaScript</strong>
+              <p data-en="Implemented EN/VI switching, mobile navigation, dynamic links, and interactive controls." data-vi="Xử lý chuyển đổi EN/VI, menu mobile, liên kết và các tương tác trên trang.">Implemented EN/VI switching, mobile navigation, dynamic links, and interactive controls.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-portfolio-4" role="region" hidden>
+              <strong>DOM API</strong>
+              <p data-en="Updated text and attributes directly in the page when visitors change the language." data-vi="Cập nhật văn bản và thuộc tính trên trang khi người xem đổi ngôn ngữ.">Updated text and attributes directly in the page when visitors change the language.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-portfolio-5" role="region" hidden>
+              <strong>LocalStorage</strong>
+              <p data-en="Remembered the selected language between visits." data-vi="Ghi nhớ ngôn ngữ đã chọn giữa các lần truy cập.">Remembered the selected language between visits.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-portfolio-6" role="region" hidden>
+              <strong>Intersection Observer</strong>
+              <p data-en="Triggered reveal effects and highlighted navigation based on the visible section." data-vi="Kích hoạt hiệu ứng xuất hiện và đánh dấu mục điều hướng theo phần đang hiển thị.">Triggered reveal effects and highlighted navigation based on the visible section.</p>
+            </div>
+            <div class="project-tech-explanation" id="tech-portfolio-7" role="region" hidden>
+              <strong>Git &amp; GitHub</strong>
+              <p data-en="Managed version history and published the portfolio source code for review." data-vi="Quản lý lịch sử phiên bản và công khai mã nguồn Portfolio để tham khảo.">Managed version history and published the portfolio source code for review.</p>
+            </div>
+          </div>
+          <div class="project-bottom">
+            <span class="project-stage"><span class="stage-dot"></span><span data-en="Personal website · maintained" data-vi="Website cá nhân · đang duy trì">Personal website · maintained</span></span>
+            <a class="project-note" href="https://github.com/Mons1412/Le_Doan_Anh_Tuan_Portfolio" target="_blank" rel="noopener noreferrer" aria-label="View My Portfolio on GitHub" title="Open GitHub repository"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+          </div>
+        </div>
+      </article>
       </div>
     </section>
-
-    <section class="content-section section other-section" id="inspiration" aria-labelledby="inspiration-heading"><div class="other-heading"><h2 id="inspiration-heading" data-en="Projects Built from Inspiration" data-vi="Các dự án tự làm theo cảm hứng">Projects Built from Inspiration</h2><p data-en="Smaller experiments, big lessons." data-vi="Những thử nghiệm nhỏ, những bài học lớn.">Smaller experiments, big lessons.</p></div><div class="project-cards">
-  <article class="project-card">
-    <div class="card-top">
-      <svg class="folder-icon" aria-hidden="true"><use href="#i-folder"/></svg>
-      <span class="card-number">01 / DESIGN</span>
+<section class="content-section section other-section" id="inspiration" aria-labelledby="inspiration-heading" data-extra-projects="carousel-v1">
+  <div class="other-heading">
+    <h2 id="inspiration-heading" data-en="Projects Built from Inspiration" data-vi="Các dự án khác của tôi">Projects Built from Inspiration</h2>
+    <p data-en="Smaller experiments, meaningful lessons." data-vi="Những thử nghiệm nhỏ, những bài học đáng giá.">Smaller experiments, meaningful lessons.</p>
+  </div>
+  <div class="additional-projects-toolbar">
+    <p class="additional-projects-hint" data-en="Explore more of my work. Scroll sideways to see additional projects." data-vi="Khám phá các dự án khác. Kéo ngang để xem thêm khi có nhiều dự án.">Explore more of my work. Scroll sideways to see additional projects.</p>
+    <div class="additional-projects-arrows" aria-label="Project carousel controls">
+      <button class="additional-projects-arrow" type="button" data-extra-scroll="prev" aria-controls="additional-projects-track" aria-label="Previous projects">&#8592;</button>
+      <button class="additional-projects-arrow" type="button" data-extra-scroll="next" aria-controls="additional-projects-track" aria-label="Next projects">&#8594;</button>
     </div>
-    <h3 data-en="Personal Portfolio v1" data-vi="Portfolio cá nhân v1">Personal Portfolio v1</h3>
-    <p data-en="This bilingual, responsive portfolio presents my experience and software projects. Its visual direction is inspired by Brittany Chiang's v4 portfolio."
-       data-vi="Portfolio song ngữ, tương thích nhiều thiết bị, giới thiệu kinh nghiệm và những dự án phần mềm của tôi. Thiết kế lấy cảm hứng từ Brittany Chiang v4.">This bilingual, responsive portfolio presents my experience and software projects. Its visual direction is inspired by Brittany Chiang's v4 portfolio.</p>
-    <ul class="card-stack"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-  </article>
-  <article class="project-card">
-    <div class="card-top">
-      <svg class="folder-icon" aria-hidden="true"><use href="#i-folder"/></svg>
-      <a class="card-github-link" href="https://github.com/Mons1412/tu-vung.git" target="_blank" rel="noopener noreferrer" aria-label="View VocaMini on GitHub" title="VocaMini GitHub repository">
-        <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
-      </a>
-    </div>
-    <h3><a href="https://github.com/Mons1412/tu-vung.git" target="_blank" rel="noopener noreferrer"
-           data-en="VocaMini — Vocabulary App" data-vi="VocaMini — Ứng dụng từ vựng">VocaMini — Vocabulary App</a></h3>
-    <p data-en="A lightweight English vocabulary learning app, deployed on the web and packaged into an Android debug APK using Capacitor."
-       data-vi="Ứng dụng học từ vựng tiếng Anh gọn nhẹ, đã triển khai trên web và đóng gói thành bản Android APK thử nghiệm bằng Capacitor.">A lightweight English vocabulary learning app, deployed on the web and packaged into an Android debug APK using Capacitor.</p>
-    <ul class="card-stack"><li>JavaScript</li><li>Vite</li><li>Capacitor</li></ul>
-  </article>
-</div></section>
+  </div>
+  <div class="project-cards additional-projects-track" id="additional-projects-track" tabindex="0" role="region" aria-label="Additional software projects">
+    <article class="project-card additional-project-card">
+      <div class="card-top">
+        <svg class="folder-icon" aria-hidden="true"><use href="#i-folder"></use></svg>
+        <a class="card-github-link" href="https://github.com/Mons1412/Hieu-hon-ve-CUDA" target="_blank" rel="noopener noreferrer" aria-label="CUDA Knowledge Assistant on GitHub" title="GitHub repository"><svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg></a>
+      </div>
+      <p class="additional-projects-kicker" data-en="Local AI / RAG" data-vi="AI cục bộ / RAG">Local AI / RAG</p>
+      <h3><a href="https://github.com/Mons1412/Hieu-hon-ve-CUDA" target="_blank" rel="noopener noreferrer">CUDA Knowledge Assistant</a></h3>
+      <p data-en="A local RAG assistant for exploring CUDA documentation. It retrieves relevant passages and generates source-cited answers using a local language model." data-vi="Trợ lý RAG chạy cục bộ để tra cứu tài liệu CUDA. Ứng dụng truy xuất đoạn tài liệu liên quan và tạo câu trả lời có trích dẫn bằng mô hình ngôn ngữ chạy tại máy.">A local RAG assistant for exploring CUDA documentation. It retrieves relevant passages and generates source-cited answers using a local language model.</p>
+      <ul class="card-stack"><li>Python</li><li>Ollama</li><li>ChromaDB</li><li>FastAPI</li><li>Docker</li></ul>
+    </article>
+    <article class="project-card additional-project-card">
+      <div class="card-top">
+        <svg class="folder-icon" aria-hidden="true"><use href="#i-folder"></use></svg>
+        <a class="card-github-link" href="https://github.com/Mons1412/cuda-matrix-multiplication-optimizer" target="_blank" rel="noopener noreferrer" aria-label="Matrix Multiplication Optimizer on GitHub" title="GitHub repository"><svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg></a>
+      </div>
+      <p class="additional-projects-kicker" data-en="Systems / Performance · Learning" data-vi="Hệ thống / Hiệu năng · Đang học">Systems / Performance · Learning</p>
+      <h3><a href="https://github.com/Mons1412/cuda-matrix-multiplication-optimizer" target="_blank" rel="noopener noreferrer">Matrix Multiplication Optimizer</a></h3>
+      <p data-en="A C++ matrix multiplication project focused on building a correct CPU baseline and measuring performance. CUDA kernel optimization remains a learning goal." data-vi="Dự án nhân ma trận bằng C++, tập trung xây dựng phiên bản CPU chuẩn và đo hiệu năng. Việc tối ưu CUDA kernel vẫn là mục tiêu đang học.">A C++ matrix multiplication project focused on building a correct CPU baseline and measuring performance. CUDA kernel optimization remains a learning goal.</p>
+      <ul class="card-stack"><li>C++</li><li>Linux</li><li>Benchmarking</li><li>CUDA (learning)</li></ul>
+    </article>
+  </div>
+</section>
 
-    <section class="contact-section section" id="contact" aria-labelledby="contact-heading"><p class="contact-overline"><span>04.</span> <span data-en="What's Next?" data-vi="Điều gì tiếp theo?">What's Next?</span></p><h2 id="contact-heading" data-en="Let's build something meaningful." data-vi="Cùng tạo ra điều có ý nghĩa.">Let's build something meaningful.</h2><p data-en="I'm always open to learning, thoughtful conversations, and opportunities to work on challenging software. Have an idea, a question, or just want to say hello? My inbox is open." data-vi="Tôi luôn sẵn sàng học hỏi, trao đổi những ý tưởng thú vị và tìm kiếm cơ hội giải quyết các bài toán phần mềm thử thách. Có dự án, câu hỏi hay chỉ muốn chào một tiếng? Hãy gửi email cho tôi.">I'm always open to learning, thoughtful conversations, and opportunities to work on challenging software. Have an idea, a question, or just want to say hello? My inbox is open.</p><a class="outline-button contact-button" href="mailto:tamcaungu404@gmail.com?subject=Hello%20Tuan"><svg class="icon"><use href="#i-mail"/></svg><span data-en="Say Hello" data-vi="Gửi lời chào">Say Hello</span></a><button class="copy-email" id="copy-email" type="button"><span data-en="or copy my email" data-vi="hoặc sao chép email">or copy my email</span><span class="copy-email-address">tamcaungu404@gmail.com</span></button></section>
+<section class="contact-section section" id="contact" aria-labelledby="contact-heading"><p class="contact-overline"><span>04.</span> <span data-en="What's Next?" data-vi="Điều gì tiếp theo?">What's Next?</span></p><h2 id="contact-heading" data-en="Let's build something meaningful." data-vi="Cùng tạo ra điều có ý nghĩa.">Let's build something meaningful.</h2><p data-en="I'm always open to learning, thoughtful conversations, and opportunities to work on challenging software. Have an idea, a question, or just want to say hello? My inbox is open." data-vi="Tôi luôn sẵn sàng học hỏi, trao đổi những ý tưởng thú vị và tìm kiếm cơ hội giải quyết các bài toán phần mềm thử thách. Có dự án, câu hỏi hay chỉ muốn chào một tiếng? Hãy gửi email cho tôi.">I'm always open to learning, thoughtful conversations, and opportunities to work on challenging software. Have an idea, a question, or just want to say hello? My inbox is open.</p><a class="outline-button contact-button" href="mailto:tamcaungu404@gmail.com?subject=Hello%20Tuan"><svg class="icon"><use href="#i-mail"/></svg><span data-en="Say Hello" data-vi="Gửi lời chào">Say Hello</span></a><button class="copy-email" id="copy-email" type="button"><span data-en="or copy my email" data-vi="hoặc sao chép email">or copy my email</span><span class="copy-email-address">tamcaungu404@gmail.com</span></button></section>
   </main>
 
   <footer class="site-footer"><div class="footer-social"><a href="#" data-social="github" aria-label="GitHub"><svg><use href="#i-github"/></svg></a><a href="#" data-social="gitlab" aria-label="GitLab"><svg><use href="#i-gitlab"/></svg></a><a href="#" data-social="facebook" aria-label="Facebook"><svg><use href="#i-facebook"/></svg></a><a href="#" data-social="linkedin" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a></div><p data-en="Designed &amp; Built by Le Doan Anh Tuan" data-vi="Thiết kế và xây dựng bởi Lê Đoàn Anh Tuấn">Designed &amp; Built by Le Doan Anh Tuan</p><p class="footer-reference"><span data-en="Design inspiration:" data-vi="Tài liệu tham khảo:">Design inspiration:</span> <a href="https://v4.brittanychiang.com/" target="_blank" rel="noopener noreferrer">Brittany Chiang — v4 <svg class="icon"><use href="#i-arrow"/></svg></a></p><p class="footer-signoff">CRAFTED WITH CURIOSITY <span aria-hidden="true">✳</span> 2026</p></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="projects-more.js" defer></script>
 </body>
 </html>

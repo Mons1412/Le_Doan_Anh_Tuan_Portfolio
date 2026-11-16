@@ -1,0 +1,34 @@
+/* GAA EXPERIENCE DETAILS — generated patch v1; scoped to #panel-0 only */
+#panel-0 .gaa-content { min-width: 0; }
+#panel-0 .gaa-heading .job-period { margin-bottom: 20px; line-height: 1.8; }
+#panel-0 .gaa-subheading { font: 600 18px/1.45 var(--sans); color: var(--white); margin: 26px 0 8px; }
+#panel-0 .gaa-subheading-projects { margin-top: 40px; }
+#panel-0 .gaa-intro { color: var(--slate-light); font-size: 13px; line-height: 1.75; margin: 0 0 16px; }
+#panel-0 .gaa-roles { display: grid; gap: 10px; }
+#panel-0 .gaa-role { border: 1px solid var(--navy-lighter); border-radius: 8px; background: rgba(17, 34, 64, .65); overflow: hidden; }
+#panel-0 .gaa-role[open] { border-color: rgba(100, 255, 218, .32); }
+#panel-0 .gaa-role-summary { list-style: none; position: relative; cursor: pointer; padding: 16px 38px 16px 18px; display: flex; flex-direction: column; gap: 5px; color: var(--white); }
+#panel-0 .gaa-role-summary::-webkit-details-marker { display: none; }
+#panel-0 .gaa-role-summary::after { content: ''; position: absolute; right: 20px; top: 22px; width: 8px; height: 8px; border-right: 2px solid var(--mint); border-bottom: 2px solid var(--mint); transform: rotate(45deg); transition: transform .2s; }
+#panel-0 .gaa-role[open] .gaa-role-summary::after { transform: rotate(225deg); }
+#panel-0 .gaa-role-summary:hover { background: rgba(100, 255, 218, .035); }
+#panel-0 .gaa-role-summary:focus-visible { outline: 2px solid var(--mint); outline-offset: -3px; }
+#panel-0 .gaa-role-name { font-size: 15px; font-weight: 600; line-height: 1.5; }
+#panel-0 .gaa-role-period { font: 11px/1.65 var(--mono); color: var(--slate); }
+#panel-0 .gaa-role-points { padding: 2px 18px 8px; max-width: none; }
+#panel-0 .gaa-role-points li { padding-left: 19px; margin-bottom: 11px; line-height: 1.7; font-size: 13px; text-align: left; overflow-wrap: anywhere; }
+#panel-0 .gaa-role-points li::before { left: 0; font-size: 17px; }
+#panel-0 .gaa-project-list { display: grid; gap: 12px; }
+#panel-0 .gaa-project { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 12px; border-radius: 8px; padding: 17px 15px; background: var(--navy-light); border: 1px solid rgba(136, 146, 176, .15); }
+#panel-0 .gaa-project-index { font: 12px/1.7 var(--mono); color: var(--mint); }
+#panel-0 .gaa-project h5 { margin: 0 0 4px; color: var(--white); font-size: 14px; line-height: 1.45; font-weight: 600; overflow-wrap: anywhere; }
+#panel-0 .gaa-project-period { margin: 0 0 8px; color: var(--slate); font: 10px/1.65 var(--mono); }
+#panel-0 .gaa-project-desc { margin: 0 0 12px; font-size: 13px; line-height: 1.7; color: var(--slate-light); text-align: left; overflow-wrap: anywhere; }
+#panel-0 .gaa-project-links { display: flex; flex-wrap: wrap; gap: 8px 14px; }
+#panel-0 .gaa-project-link { font: 11px/1.6 var(--mono); color: var(--mint); text-decoration: none; border-bottom: 1px solid transparent; overflow-wrap: anywhere; }
+#panel-0 .gaa-project-link:hover, #panel-0 .gaa-project-link:focus-visible { border-bottom-color: var(--mint); }
+@media (max-width: 620px) {
+  #panel-0 .gaa-role-summary { padding: 14px 34px 14px 14px; }
+  #panel-0 .gaa-role-points { padding: 0 13px 7px; }
+  #panel-0 .gaa-project { grid-template-columns: 21px minmax(0, 1fr); padding: 14px 12px; gap: 10px; }
+}
