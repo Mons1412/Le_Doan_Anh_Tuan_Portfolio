@@ -112,10 +112,10 @@
   }));
   $('#copy-email').addEventListener('click', async () => {
     try {
-      await navigator.clipboard.writeText('tamcaungu404@gmail.com');
+      await navigator.clipboard.writeText('letuan250904@gmail.com');
       showToast(lang === 'vi' ? 'Đã sao chép địa chỉ email!' : 'Email address copied!');
     } catch (_) {
-      showToast('tamcaungu404@gmail.com');
+      showToast('letuan250904@gmail.com');
     }
   });
 

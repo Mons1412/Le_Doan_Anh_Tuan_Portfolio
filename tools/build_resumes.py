@@ -24,7 +24,7 @@ SLATE = colors.HexColor('#53677e')
 CONTENT = {
 'en': {
  'name':'LE DOAN ANH TUAN', 'role':'SOFTWARE ENGINEERING STUDENT',
- 'location':'Ho Chi Minh City, Vietnam', 'email':'tamcaungu404@gmail.com',
+ 'location':'Ho Chi Minh City, Vietnam', 'email':'letuan250904@gmail.com',
  'profile':'Final-year Software Engineering student interested in AI applications, backend engineering, C++, systems programming and GPU computing. Enjoys shipping practical projects and developing a strong technical foundation.',
  'sections': [
   ('EDUCATION', [('Nguyen Tat Thanh University', 'Software Engineering · Final year', 'Ho Chi Minh City')]),
@@ -40,7 +40,7 @@ CONTENT = {
 },
 'vi': {
  'name':'LÊ ĐOÀN ANH TUẤN', 'role':'SINH VIÊN KỸ THUẬT PHẦN MỀM',
- 'location':'TP. Hồ Chí Minh, Việt Nam', 'email':'tamcaungu404@gmail.com',
+ 'location':'TP. Hồ Chí Minh, Việt Nam', 'email':'letuan250904@gmail.com',
  'profile':'Sinh viên năm cuối ngành Kỹ thuật phần mềm, quan tâm đến ứng dụng AI, phát triển backend, C++, lập trình hệ thống và tính toán GPU. Yêu thích việc xây dựng sản phẩm thực tế và củng cố nền tảng kỹ thuật.',
  'sections': [
   ('HỌC VẤN', [('Đại học Nguyễn Tất Thành', 'Ngành Kỹ thuật phần mềm · Sinh viên năm cuối', 'TP. Hồ Chí Minh')]),
